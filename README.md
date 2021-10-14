@@ -1,6 +1,6 @@
-<div align=center><h1>Fluent</h1>  
+<div align=center><h1>Fluent [without ADS]</h1>  
 
-  [Spicetify](https://github.com/khanhas/spicetify-cli) theme inspired by Windows 11 UI and Microsoft's Fluent Design  
+  [Spicetify](https://github.com/khanhas/spicetify-cli) theme inspired by Windows 11 UI and Microsoft's Fluent Design, modified by SapitoSucio to remove ADS/Banners  
 
 </div>
 
