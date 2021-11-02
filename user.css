@@ -142,6 +142,10 @@
   margin-top: 8px;
 }
 
+._AxyaXOKl3GkvT212Vco { /* tags */
+  padding: 12px !important;
+}
+
 .x-categoryCard-title,
 .x-heroCategoryCard-heroTitle,
 .collection-collectionEntityHeroCard-likedSongs div {
@@ -289,12 +293,14 @@ h3,
 
 /* buttons */
 
-.icon {
+.icon, .gSLhUO {
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
   margin: auto;
+  display: block;
 }
 
+.main-navBar-navBarLink .gSLhUO path,
 .icon > svg,
 .x-searchInput-searchInputIconContainer path,
 .show-episodeBlock-playerActions svg, 
@@ -534,18 +540,16 @@ button.switch {
   color: var(--spice-subtext);
 }
 
-.main-navBar-navBarLinkActive > .icon {
+.main-navBar-navBarLinkActive > .icon,
+.main-navBar-navBarLinkActive .gSLhUO {
   position: relative;
   top: 50%;
   transform: translate(0, -50%);
+  margin: auto;
 }
 
 .main-navBar-navBarLinkActive {
   padding: 0px;
-}
-
-.main-navBar-navBarLink .icon {
-  margin: auto;
 }
 
 .main-navBar-entryPoints {
@@ -684,6 +688,7 @@ button.switch {
 
 .main-trackList-indexable {
   padding: 8px;
+  padding-bottom: 24px;
 }
 
 .main-trackList-trackListHeader.g9n_9K5pFI3B_JuDI_hS {
@@ -1305,6 +1310,7 @@ option {
 }
 
 .playback-bar,
+.progress-bar,
 .progress-bar__fg_wrapper,
 .lRNLjBiX_H7SPYbkJKLp,
 .lIrtJi5Y_8ENU19VSvJO {
@@ -1482,6 +1488,24 @@ option {
   height: 22px !important;
 }
 
+.j4TkiByCgwfJawuHfzsd { /* Skip back 15 sec */
+  -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_skip_backward_15_24_filled.svg');
+  background-color: var(--spice-text) !important; 
+  height: 22px !important;
+}
+
+.Kvxb6GUtWNNo5mFeKfMn { /* Skip forward 15 sec */
+  -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_skip_forward_15_24_filled.svg');
+  background-color: var(--spice-text) !important; 
+  height: 22px !important;
+}
+
+.Y0lBew4O9_Ma84_Lnnsq { /* Speed icon for podcasts */
+  -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_top_speed_24_filled.svg');
+  background-color: var(--spice-text) !important; 
+  height: 22px !important;
+}
+
 /* Disabled */
 .main-repeatButton-button[aria-checked="false"]{
   -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_arrow_repeat_all_off_24_regular.svg');
@@ -1514,6 +1538,10 @@ option {
   height: 22px !important;
 }
 
+/*Like button*/
+.control-button-heart[aria-checked=true] {
+  color: var(--spice-accent);
+}
 
 /* ads */
 
@@ -1555,136 +1583,10 @@ option {
   padding: 0px;
 }
 
-/* For versions below v1.66 */
+/* spicetify extensions */
 
-
-/* Context menu upgrade button */
-.upgrade-button, button[data-menu-item="upgrade-account"], .main-contextMenu-menuItem a[href="https://www.spotify.com/premium/"], button[id="upgradeAccount"] {
-  display: none !important;
-}
-
-/* Ad placeholder */
-.main-leaderboardComponent-container{
-  display: none;
-}
-/* Upgrade button */
-.main-topBar-UpgradeButton {
-  display: none;
-}
-
-/* Pointer cursors for accessibility */
-.show-followButton-button,
-.main-dropDown-dropDown,
-.x-toggle-wrapper,
-.main-playlistEditDetailsModal-closeBtn,
-.main-trackList-rowPlayPauseButton,
-.main-rootlist-rootlistItemLink:link, .main-rootlist-rootlistItemLink:visited,
-.x-sortBox-sortDropdown,
-.main-contextMenu-menuItemButton,
-.main-trackList-column,
-.main-moreButton-button,
-.x-downloadButton-button,
-.main-playButton-PlayButton,
-.main-coverSlotExpandedCollapseButton-chevron,
-.main-coverSlotCollapsed-chevron,
-.control-button:focus, .control-button:hover,
-.main-repeatButton-button,
-.main-skipForwardButton-button,
-.main-playPauseButton-button,
-.main-skipBackButton-button,
-.main-shuffleButton-button,
-.main-addButton-button,
-.progress-bar__slider,
-.main-editImageButton-image {
-  cursor: pointer;
-}
-
-/* Home page ad section */
-.desktoproutes-homepage-takeover-ad-hptoComponent-parentContainer{
-  display: none !important;
-}
-
-/* Remove download button */
-.x-downloadButton-DownloadButton{
-  display:none;
-}
-
-/* Context menu download button */
-.main-contextMenu-disabled:not([as=a]) {
-  display: none !important;
-}
-
-
-/* For update v1.66+ */
-
-
-/* Upgrade button */
-.PzcmS_Z8j0D6n3ZEmv20[aria-label="Upgrade to Premium"] {
-  display: none !important
-}
-
-/* Ad placeholder */
-.snMc3rl8H2pM9cqkTpQ6 {
-  display: none !important
-}
-
-/* Context menu upgrade button */
-.tGu6COgM3S0NqMyh5Jx0 a[href="https://www.spotify.com/premium/"] {
-  display: none !important
-}
-
-/* Download button */
-._GVuKFHd7xr1QUKi_aWH {
-  display: none !important
-}
-
-/* Context menu download button */
-._qjkLyY1fy0hwCfzDZP7[aria-disabled=true] {
-  display: none !important
-}
-
-/* Find more button scale on hover */
-.tJAIYSfsDs3HsXDAPenF:hover {
-  transform: scale(1.06)
-}
-
-/* Pointer cursors for accessibility */
-.OBaPDV8g5lhQbNPmIEwf,
-._S0gp4_8E3h4YCh9EAY9,
-._qjkLyY1fy0hwCfzDZP7,
-.Xo36XRWGIbAh4SIj9FQB,
-.OSNOtcFz_LbegO1zggsb,
-.vBPFl8zuUaCexgJTw8Uc,
-.gro_tSi7cwspepH0as03,
-.vwGw2RO2v__qDU_9c5PE,
-.__1BGhJvHnvqYTPyG074,
-.h1OzWpjBctL_0cZqc4_w,
-.kyn0AY4_gXWvbdivdFgP,
-.kJVSjS2_BaEzRIoxwEhP,
-.mnhCDMSoY7L0E85V51mj,
-.QzuziJ2jGf1gnQA0IAU4,
-.jn05jgnCWyQjLZKqyKFa,
-.YFghzhgfbeZjLqvWpGN3,
-.XP_gp8Z91Ji6qbery2w3,
-._1bg4_fL__odhCd6G_B2,
-.tJAIYSfsDs3HsXDAPenF,
-._xAwo5THLGLKCTj5z4fF,
-.hzuVs5WHF7XZSJtOi_9H,
-.tIriT4RktlpCPFsZWXn2,
-.bC6V9kuel2ZewnjMAtZm,
-.ipxcyIaAWQfeUHO468Os,
-._kySQxSksHLKYgofFfhl,
-.giO6cIQ8auPNZuTvC4Y8,
-.giO6cIQ8auPNZuTvC4Y8 {
-  cursor: pointer !important
-}
-
-/* Remove homepage ad banner */
-.k6onUQZSeZIsonJ4cSpK {
-  display: none !important
-}
-
-/* Remove sponsor ads in playlists */
-.sponsor-container {
-  display: none !important
+.main-topBar-button[title="Popup Lyrics"],
+.main-topBar-button[title="Full App Display"],
+.main-topBar-button[title="Bookmark"] {
+  background-color: var(--spice-card) !important;
 }
